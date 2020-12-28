@@ -9,7 +9,7 @@ import lombok.NoArgsConstructor;
 
 import javax.persistence.*;
 import javax.validation.constraints.NotNull;
-import java.util.Date;
+import java.time.LocalDateTime;
 
 @Data
 @NoArgsConstructor
@@ -31,7 +31,7 @@ public class LogTransacao {
     private Usuario autor;
 
     @NotNull
-    private Date data;
+    private LocalDateTime data;
 
     @OneToOne
     @NotNull

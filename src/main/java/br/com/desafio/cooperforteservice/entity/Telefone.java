@@ -23,6 +23,7 @@ public class Telefone {
     private TipoTelefoneEnum tipo;
 
     @NotEmpty
+    @Column(nullable = false)
     private String telefone;
 
 }

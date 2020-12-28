@@ -1,7 +1,5 @@
 package br.com.desafio.cooperforteservice.entity;
 
-import br.com.desafio.cooperforteservice.Usuario;
-import com.fasterxml.jackson.annotation.JsonIgnore;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
@@ -11,8 +9,6 @@ import org.springframework.security.core.GrantedAuthority;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Id;
-import javax.persistence.OneToMany;
-import java.util.List;
 
 @Data
 @Builder
@@ -31,7 +27,4 @@ public class Perfil implements GrantedAuthority {
         return nome;
     }
 
-//    @OneToMany(mappedBy = "perfil")
-//    @JsonIgnore
-//    private List<Usuario> usuarios;
 }

@@ -7,6 +7,7 @@ import br.com.desafio.cooperforteservice.repository.LogRepository;
 import lombok.AllArgsConstructor;
 import org.springframework.stereotype.Service;
 
+import java.time.LocalDateTime;
 import java.util.Date;
 
 @AllArgsConstructor
@@ -20,7 +21,7 @@ public class LogService {
 
         LogTransacao log = LogTransacao.builder()
                 .operacao(operacaoEnum)
-                .data(new Date())
+                .data(LocalDateTime.now())
                 .cliente(cliente)
                 .autor(autenticacaoService
                         .obterUsuarioLogado())
