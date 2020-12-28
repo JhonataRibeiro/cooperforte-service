@@ -5,6 +5,10 @@
 ### Para executar o projeto:
 
 ```Java
+mvn install
+```
+
+```Java
 mvn spring-boot:run
 ```
 
